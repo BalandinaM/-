@@ -29,3 +29,32 @@
   --special-light-grey:#F2F2F2;
   --special-dark-grey: #A9A9A9;
 }
+
+html {
+  background-color: var(--special-light-grey);
+  margin-left: 40px;
+  margin-right: 40px;
+  max-width: 1280px;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
