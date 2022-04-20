@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <title>Седона</title>
+  </head>
+  <body class="page-body">
+    <header class="header">
+      <nav class="header__nav nav">
+        <a class="nav__logo" href="index.html">
+          <img src="img/logo/logo.svg" alt="Лого города Седона" width="138" height="70">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="blank.html">Информация</a></li>
+          <li class="nav__item"><a href="blank.html">Фото и видео</a></li>
+          <li class="nav__item"><a href="blank.html">Карта штата</a></li>
+          <li class="nav__item nav__item-current"><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <img class="header__background header__background_transparent" src="img/index/header/header-foto-sedona.jpg" alt="Высокие горы с каменистыми выступы частично покрытые лесом" width="1200" height="509">
+    </header>
+    <main class="main-catalog">
+        <section class="catalog__filter filter">
+            <h2>Фильтр выбора параметров гостиницы</h2><!--Скрыть-->
+                <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+
+                        <fieldset>
+                            <legend>Инфрастуктура:</legend>
+                                        <p>
+                                            <label for="swimming-pool">Бассейн</label>
+                                            <input class="filter__input_checkbox filter__input" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+                                        </p>
+                                       <p>
+                                            <label for="parking">Парковка</label>
+                                            <input class="filter__input_checkbox filter__input" type="checkbox" name="parking" id="parking">
+                                       </p>
+                                        <p>
+                                            <label for="WIFI">Wi-Fi</label>
+                                            <input class="filter__input_checkbox filter__input" type="checkbox" name="WIFI" id="WIFI">
+                                        </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Тип жилья:</legend>
+
+                                        <p>
+                                            <label for="hotel">Гостиница</label>
+                                            <input class="filter__input_checkbox filter__input" type="checkbox" name="hotel" id="hotel" checked>
+                                        </p>
+
+                                        <p>
+                                            <label for="motel">Мотель</label>
+                                            <input class="filter__input_checkbox filter__input" type="checkbox" name="motel" id="motel" checked>
+                                        </p>
+
+                                        <p>
+                                            <label for="apartments">Апартаменты</label>
+                                            <input class="filter__input_checkbox filter__input" type="checkbox" name="apartments" id="apartments" checked>
+                                        </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Стоимость в сутки, Р:</legend>
+                               <p>
+                                  <label for="price-from">
+                                    <input class="filter__input" type="text" name="price-from" id="price-from" value="0">
+                                  </label>
+                               </p>
+                               <p>
+                                  <label for="price-up-to">
+                                    <input class="filter__input" type="text" name="price-up-to" id="price-up-to" value="3000">
+                                  </label>
+                               </p>
+                               <p>
+                                  <label for="range-price">
+                                    <input class="filter__input_range filter__input" type="range" min="0" max="3000" name="range-price" id="range-price">
+                                  </label>
+                               </p>
+                               <button class="filter__button button">Показать</button>
+                        </fieldset>
+                </form>
+        </section>
+        <section class="catalog__sorting">
+            <p>Найдено:3</p>
+            <h2>Сортировка:</h2>
+            <!-- <form action="https://echo.htmlacademy.ru" method="get">
+                <input type="radio" name="sorting" id="by_price" value="by_price" checked>
+                <label for="by_price"> По цене</label>
+                <input type="radio" name="sorting" id="by_type" value="by_price">
+                <label for="by_type"> По типу</label>
+                <input type="radio" name="sorting" id="by_rating" value="by_price">
+                <label for="by_rating"> По рейтингу</label>
+            </form> -->
+            <button class="sorting__button button">По цене</button>
+            <button class="sorting__button button">По типу</button>
+            <button class="sorting__button button">По рейтингу</button>
+            <div>
+              <button class="sorting__button_arrow-up">Стрелочка вверх</button>
+              <button class="sorting__button_arrow-down">Стрелочка вниз</button>
+            </div>
+        </section>
+        <section class="catalog__results-filter">
+            <h2>Результат отбора</h2>
+            <ul class="results-filter__list">
+                <li class="results-filter__item">
+                    <img src="img/catalog/Amara_resort_and_spa.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
+                    <h3>Amara Resort & Spa</h3>
+                    <p>Гостиница</p>
+                    <p>От 4000 ₽</p>
+                    <a class="button results-filter__button_blue" href="blank.html">Подробнее</a>
+                    <button class="button results-filter__button_brown">Забронировать</button>
+                    <p>Рейтинг:8,5</p>
+                </li>
+                <li class="results-filter__item">
+                    <img src="img/catalog/Desert.jpg" alt="Фото мотеля Desert Quail Inn" width="135" height="90">
+                    <h3>Desert Quail Inn</h3>
+                    <p>Мотель</p>
+                    <p>От 3000 ₽</p>
+                    <a class="button results-filter__button_blue" href="blank.html">Подробнее</a>
+                    <button class="button results-filter__button_brown">Забронировать</button>
+                    <p>Рейтинг:8,9</p>
+                </li>
+                <li class="results-filter__item">
+                    <img src="img/catalog/Villas_at_poco_diablo.jpg" alt="Фото апартоментов Villas at Poco Diablo" width="135" height="90">
+                    <h3>Villas at Poco Diablo</h3>
+                    <p>Апартаменты</p>
+                    <p>От 2000 ₽</p>
+                    <a class="button results-filter__button_blue" href="blank.html">Подробнее</a>
+                    <button class="button results-filter__button_brown">Забронировать</button>
+                    <p>Рейтинг:9,2</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__contacts" >
+        <h2>Контакты</h2> <!--Скрыть-->
+        <p>#VISITSEDONA</p>
+        <a href="tel:+78005558628"><p>+ 7 800 555 86 28</p></a>
+      </section>
+      <section class="page-footer__socials">
+        <h2>Мы в соц.сетях</h2> <!--Скрыть-->
+        <ul>
+          <li>
+            <a class="button socials__button" href="#">
+              <span>Твиттер</span>
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34501 15.9981H4.89901C4.48901 15.9981 0.735007 15.5381 0.00100708 14.1111C2.27201 14.3071 3.89401 13.6891 4.69401 12.9341C3.73401 12.6341 2.01501 12.4571 1.71501 9.98409C2.06401 10.0901 2.27901 10.2121 2.90501 10.1031C1.70501 9.24709 0.374007 8.53009 0.448007 6.33009C0.733007 6.65809 1.51501 6.86609 1.78801 6.80209C1.08501 6.56109 -0.181993 3.44209 0.894007 1.85009C2.71201 3.70409 4.62901 5.45609 8.04601 5.62309C8.25401 3.33009 9.18301 1.79309 10.95 1.14409Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="button socials__button" href="#">
+              <span>Фейсбук</span>
+              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="button socials__button" href="#">
+              <span>Ютуб</span>
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__copyright">
+        <p>WEBSITE BY</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo/logo_htmlacademy.svg" alt="Лого HTMLAcademy" width="115" height="33">
+        </a>
+      </section>
+    </footer>
+
+  </body>
+</html>

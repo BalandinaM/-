@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "PTSans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PTSans"),
+       url("../Седона/fonts/PTSans.woff2") format("woff2"),
+       url("../Седона/fonts/PTSans.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PTsans-Bold"),
+       url("../Седона/fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../Седона/fonts/PTSans-Bold.woff") format("woff");
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-light-blue: #81B3D2;
+  --basic-blue: #669EC0;
+  --basic-dark-blue: #5496BD;
+  --basic-light-brown: #766357;
+  --basic-brown: #604E43;
+  --basic-dark-brown: #503E33;
+  --basic-dark-grey: #333333;
+  --basic-light-grey: #EEEEEE;
+  --special-light-grey:#F2F2F2;
+  --special-dark-grey: #A9A9A9;
+}
+
+/* Global */
+
+html {
+  background-color: var(--special-light-grey);
+  min-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation menu */
+
+.nav__list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  list-style: none;
+}
+
+.header__background {
+  background-color: var(--special-dark-grey);
+}
+
