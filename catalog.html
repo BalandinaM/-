@@ -5,18 +5,21 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Седона</title>
   </head>
   <body class="page-body">
-    <header class="header">
-      <nav class="header__nav nav">
-        <a class="nav__logo" href="index.html">
-          <img src="img/logo/logo.svg" alt="Лого города Седона" width="138" height="70">
-        </a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="blank.html">Информация</a></li>
-          <li class="nav__item"><a href="blank.html">Фото и видео</a></li>
-          <li class="nav__item"><a href="blank.html">Карта штата</a></li>
+    <body>
+      <header class="header">
+        <nav class="header__nav nav">
+          <a class="nav__logo"  href="index.html">
+            <img src="img/logo/logo.svg" alt="Лого города Седона" width="138" height="70">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="blank.html">Информация</a></li>
+            <li class="nav__item"><a href="blank.html">Фото и видео</a></li>
+            <li class="nav__item"><a href="blank.html">Карта штата</a></li>
           <li class="nav__item nav__item-current"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
@@ -24,7 +27,7 @@
     </header>
     <main class="main-catalog">
         <section class="catalog__filter filter">
-            <h2>Фильтр выбора параметров гостиницы</h2><!--Скрыть-->
+            <h2 class="visually-hidden">Фильтр выбора параметров гостиницы</h2><!--Скрыть-->
                 <form class="filter" action="https://echo.htmlacademy.ru" method="get">
 
                         <fieldset>
@@ -101,7 +104,7 @@
             </div>
         </section>
         <section class="catalog__results-filter">
-            <h2>Результат отбора</h2>
+            <h2 class="visually-hidden">Результат отбора</h2>
             <ul class="results-filter__list">
                 <li class="results-filter__item">
                     <img src="img/catalog/Amara_resort_and_spa.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
@@ -135,12 +138,12 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts" >
-        <h2>Контакты</h2> <!--Скрыть-->
+        <h2 class="visually-hidden">Контакты</h2> <!--Скрыть-->
         <p>#VISITSEDONA</p>
         <a href="tel:+78005558628"><p>+ 7 800 555 86 28</p></a>
       </section>
       <section class="page-footer__socials">
-        <h2>Мы в соц.сетях</h2> <!--Скрыть-->
+        <h2 class="visually-hidden">Мы в соц.сетях</h2> <!--Скрыть-->
         <ul>
           <li>
             <a class="button socials__button" href="#">
