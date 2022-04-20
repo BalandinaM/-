@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "PTSans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PTSans"),
+       url("../Седона/fonts/PTSans.woff2") format("woff2"),
+       url("../Седона/fonts/PTSans.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSans-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PTsans-Bold"),
+       url("../Седона/fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../Седона/fonts/PTSans-Bold.woff") format("woff");
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-light-blue: #81B3D2;
+  --basic-blue: #669EC0;
+  --basic-dark-blue: #5496BD;
+  --basic-light-brown: #766357;
+  --basic-brown: #604E43;
+  --basic-dark-brown: #503E33;
+  --basic-dark-grey: #333333;
+  --basic-light-grey: #EEEEEE;
+  --special-light-grey:#F2F2F2;
+  --special-dark-grey: #A9A9A9;
+}
