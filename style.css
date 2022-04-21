@@ -55,7 +55,7 @@ img {
 }
 
 ul {
-  list-style: none;
+  list-style: none;  /*убрать по классам*/
 }
 
 .visually-hidden {
@@ -186,16 +186,69 @@ ul {
   color: rgba(255, 250, 250, 0.3);
 }
 
-.link {
-  fill: var(--basic-black);
-}
 
 .link:hover {
-  fill: var(--basic-dark-blue);
+  color: var(--basic-dark-blue);
 }
 
 .link:focus {
-   fill-opacity: 0.3;
+   opacity: 0.3;
+}
+
+.filter__button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  text-transform: uppercase;
+}
+
+.filter__button:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.sorting__button {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+  border: none;
+  border-bottom: 1px dashed var(--basic-light-blue);
+  background-color: transparent;
+}
+
+.sorting__button:hover  {
+  color: var(--basic-light-blue);
+  opacity: 1;
+}
+
+.sorting__button:active {
+  opacity: 1;
+  border: none;
+}
+
+.sorting__button:focus {
+  border: none;
+  color: var(--basic-light-blue);
+  opacity: 1;
+}
+
+.link h3{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.results-filter__link:hover {
+  color: var(--basic-light-blue);
+}
+
+.results-filter__link:focus {
+  opacity: 0.3;
 }
 
 /*Подвал*/
@@ -231,3 +284,42 @@ ul {
 }
 
 /*Каталог*/
+
+/*Фильтр*/
+
+.filter legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+ .filter__item, 
+ .filter__input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+/*Результат отбора*/
+
+.catalog__sorting p {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.catalog__sorting h2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+
+.results-filter__item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
