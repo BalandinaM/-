@@ -28,6 +28,11 @@
   --basic-light-grey: #EEEEEE;
   --special-light-grey:#F2F2F2;
   --special-dark-grey: #A9A9A9;
+  --special-orange: #f7a84d;
+  --background-map: #dbd1c5;
+  --pink: #d1417d;
+  --blue-grey: #9db0cc;
+  --green: #74d677;
 }
 
 body {
@@ -54,9 +59,9 @@ img {
   height: auto;
 }
 
-ul {
+/*ul {
   list-style: none;  /*убрать по классам*/
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -77,6 +82,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
+  list-style: none;
 }
 
 .header__background {
@@ -99,6 +105,7 @@ ul {
 }
 
 .advantages__list {
+  list-style: none;
 }
 
 .item__title {
@@ -109,6 +116,7 @@ ul {
 
 .advantages-item__list {
   background-color: var(--special-light-grey);
+  list-style: none;
 }
 
 .advantages-item__list h4 {
@@ -124,6 +132,10 @@ ul {
   color: var(--basic-white);
 }
 
+.advantages__item img {
+  background-color: var(--special-orange)
+}
+
 /* Блок поиска отеля*/
 
 .search-hotel {
@@ -137,6 +149,10 @@ ul {
   font-weight: 700;
   font-size: 30px;
   line-height: 24px;
+}
+
+.search-hotel__map {
+  background-color: var(--background-map);
 }
 
 /*Интерактивные элементы*/
@@ -259,6 +275,10 @@ ul {
   line-height: 26px;
 }
 
+.socials__list {
+  list-style: none;
+}
+
 
 .footer__copyright {
   line-height: 26px;
@@ -322,4 +342,20 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.results-filter__list {
+  list-style: none;
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.blue-grey {
+  background-color: var(--blue-grey);
+}
+
+.green {
+  background-color: #74d677;
 }
